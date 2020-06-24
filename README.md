@@ -27,4 +27,7 @@ To get an Autheication Key for your Google Spreadsheet please use this Youtube V
 
 After you have got your json file rename it to "auth.json" and add it to the directory of SpeedToSheet.py
 
+#
+You can also upload this script to a **RaspberryPi** so it can run all day and night via a cronjob
+
 ## Setup Complete
