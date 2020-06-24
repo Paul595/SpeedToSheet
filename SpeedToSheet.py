@@ -5,6 +5,7 @@ import speedtest
 from datetime import datetime
 import sys
 import os
+import time
 
 spreadsheet_name = 'Raspi-SpeedTest' #change to your filename
 
@@ -31,10 +32,9 @@ def SpeedTest():
 
     # print(res)
 
-    current_time = datetime.now().strftime("%H:%M:%S")
-    current_date = datetime.today().strftime('%d/%m/%Y')
+    return [ "", float(res["ping"]), float(humanbytes(res["download"])), float(humanbytes(res["upload"])), int(res["server"]["id"]), res["server"]["name"]+"/"+res["server"]["sponsor"], res["server"]["country"] ]
 
-    return [current_date, current_time, res["ping"], humanbytes(res["download"]), humanbytes(res["upload"]), res["server"]["id"], res["server"]["name"]+"/"+res["server"]["sponsor"], res["server"]["country"] ]
+
 
 
 def humanbytes(B):
@@ -68,6 +68,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
