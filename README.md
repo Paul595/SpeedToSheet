@@ -23,7 +23,7 @@ spreadsheet_name = 'Raspi-SpeedTest' #change to your filename
 
 
 ### Get Authentication for Google Spreadsheet 
-To get an Autheication Key for your Google Spreadsheet please use this Youtube Video (To be added)
+To get an Autheication Key for your Google Spreadsheet please use this [Youtube Video by Pretty Printed](https://www.youtube.com/watch?v=7I2s81TsCnc)
 
 After you have got your json file rename it to "auth.json" and add it to the directory of SpeedToSheet.py
 
